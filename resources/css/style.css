@@ -236,3 +236,46 @@ section.header-nav-section{
     background-color: #81AC27;
 }
 
+ /*==============================
+        HERO-SECTION
+ ==============================*/
+ #hero-section{min-height: 825px;
+     background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.6)), url(img/hero.jpg) no-repeat center / cover;
+     color: #fff;
+     position: relative;
+ }
+ .hero-content{
+     position: absolute;
+     top: 30%;
+ }
+ .hero-content h4{
+     font-size: 16px;
+     text-transform: capitalize;
+ }
+ .hero-content h1{
+     font-size: 48px;
+     text-transform: capitalize;
+     margin: 30px 0px 20px 0px;
+ }
+ .hero-content p{
+     font-size: 14px;
+     margin-bottom: 30px;
+ }
+ .hero-btn a{
+     font-size: 16px;
+     color: #fff;
+     padding: 6px 20px;
+     border-radius: 20px;
+     border: 1px solid #fff;
+     margin-right: 10px;
+     transition: .5s ease-in;
+ }
+ .hero-btn a:first-child:hover,
+ .hero-btn a:last-child:hover{
+     background-color: #81AC27;
+     border: 1px solid #81AC27;
+
+ }
+
+ 
+ 
