@@ -277,5 +277,31 @@ section.header-nav-section{
 
  }
 
+  /*=====================================
+        BACKGROUND-OVERLAY-SECTION
+ =======================================*/
+ #background-overlay-section{
+     background-color: #fff;
+     min-height: 30vh;
+ }
+ .grid-overlay-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+ }
+ .grid-overlay-item{
+     height: 250px;
+     width: 100%;
+     background-color: #000;
+     margin-top: -80px;
+     z-index: 1;
+ }
+ .grid-overlay-item:first-child{
+     background: url(img/product-overlay-1.png) no-repeat center / cover;
+ }
+ .grid-overlay-item:last-child{
+    background: url(img/product-overlay-2.png) no-repeat center / cover;
+}
+
  
  
