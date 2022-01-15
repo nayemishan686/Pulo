@@ -277,7 +277,7 @@ section.header-nav-section{
 
  }
 
-  /*=====================================
+ /*======================================
         BACKGROUND-OVERLAY-SECTION
  =======================================*/
  #background-overlay-section{
@@ -301,6 +301,68 @@ section.header-nav-section{
  }
  .grid-overlay-item:last-child{
     background: url(img/product-overlay-2.png) no-repeat center / cover;
+}
+
+/*======================================
+        ABOUT-PRODUCT-SECTION
+ =======================================*/
+#about-product-section{
+    background-color: #fff;
+}
+.grid-about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 80px;
+}
+.grid-about-item img{
+    width: 100%;
+}
+.grid-about-item h4{
+    color: #81AC27; 
+    font-size: 16px;  
+    text-transform: capitalize;
+}
+.grid-about-item h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+.grid-about-item p{
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+.grid-about-item ul li{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.grid-about-item ul li i{
+    color: #81AC27;
+    padding-right: 5px;
+}
+.about-testimonial{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+.about-testimonial-img{
+    height: 50px;
+    width: 50px;
+}
+.about-testimonial-img img{
+    border-radius: 50%;
+    padding: 5px;
+    outline: 2px solid #81AC27;
+}
+.about-testimonial-description h3{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.about-testimonial-description h4{
+    font-size: 12px;
+}
+#about-product-section hr{
+    height: 1px;
+    background-color: #81AC27;
 }
 
  
