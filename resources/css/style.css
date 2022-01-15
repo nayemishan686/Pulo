@@ -88,7 +88,6 @@ body{
      margin: auto;
  }
 
-
 /*==============================
         3. HEADER-SECTION
  ==============================*/
@@ -365,5 +364,101 @@ section.header-nav-section{
     background-color: #81AC27;
 }
 
+
+/*======================================
+        TRENDING-PRODUCT-SECTION
+ =======================================*/
+#trending-product-secction{
+    text-align: center;
+    padding: 60px 0;
+}
+#trending-product-secction .row{
+    width: 80%;
+    margin: auto;
+}
+#trending-product-secction h4{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: rgb(77, 77, 77);
+    padding: 5px;
+}
+#trending-product-secction h2{
+    font-size: 32px;
+
+}
+.trending-product-cotainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 40px;
+}
+.product-box{
+    height: 400px;
+    width: 100%;
+    background-color: #ddd;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.prodect-img img{
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #81AC27;
+}
+.product-details h3{
+    font-size: 24px;
+    color: #222225;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.product-details h5{
+    font-size: 16px;
+    word-spacing: 5px;
+    font-weight: 400;
+}
+.product-icon {
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: none;
+}
+.product-box:hover .product-icon{
+    display: block
+}
+.product-icon ul li i{
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.product-icon ul li i:hover{
+    background-color: #81AC27;
+    color: #fff;
+}
+.sale-icon{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.sale-icon span{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #81AC27;
+    border-radius: 50%;
+    color: #fff;
+}
+.product-view-more a{
+    color: #fff;
+    background: #81AC27;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+}
  
  
