@@ -562,7 +562,6 @@ section.header-nav-section{
     top: 10%;
     left: 50%;
     transform: translate(-50%,30%);
-    display: none;
 }
 .featured-product-item:hover .featured-details{
     display: block;
@@ -593,4 +592,66 @@ section.header-nav-section{
 }
 .featured-product-item:last-child{
     background: linear-gradient(rgb(0, 0, 0, 0.6),rgb(0, 0, 0,0.5)), url(img/Featured-Product-2.jpg) no-repeat center / cover;
+}
+/*======================================
+        FOOTER-SECTION
+ =======================================*/
+ #footer-section{
+    padding: 100px 0 30px;
+    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.6)), url(img/footer.jpg) no-repeat top / cover;
+    color: #fff;
+    font-size: 18px;
+}
+#footer-section ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+#footer-section ul li a:hover{
+    color: #81AC27;
+}
+#footer-section ul li{
+    padding: 5px;
+}
+
+ /*======================================
+        FOOTER-TOP-SECTION
+ =======================================*/
+ .footer-top-container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     padding-bottom: 30px;
+ }
+ .footer-top-container h3{
+     font-size: 24px;
+     padding: 30px 0;
+ }
+.footer-top-item h4{
+    font-size: 20px;
+    padding: 5px 0;
+} 
+.footer-top-item address{
+    line-height: 30px;
+}
+.address h4{
+    padding-top: 0;
+}
+
+
+
+ /*======================================
+        FOOTER-BOTTOM-SECTION
+ =======================================*/
+.footer-bottom{
+    padding: 30px 0;
+}
+.copyright{
+    float: left;
+}
+.footer-bottom-nav{
+    float: right;
+}
+.footer-bottom-nav ul li{
+    display: inline-block;
 }
