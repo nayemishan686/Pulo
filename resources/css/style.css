@@ -819,3 +819,125 @@ section.header-nav-section{
 .footer-bottom-nav ul li{
     display: inline-block;
 }
+
+
+
+ /*======================================
+                ACCOUNT PAGE
+ =======================================*/
+
+        /*======================================
+                BREADCUMB-SECTION
+        =======================================*/
+ #breadcumb-section{
+     background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), url(../../resources/img/breadcumb.jpg) no-repeat center / cover;
+     padding: 40px 0;
+     text-align: center;
+     color: #fff;
+ }
+ #breadcumb-section h4{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 30px;
+ }
+
+        /*======================================
+                ACCOUNT-SECTION
+        =======================================*/
+#account-section{
+    padding: 60px 0;
+}
+#account-section h2{
+    font-size: 24px;
+}
+#account-section p{
+    font-size: 14px;
+    padding: 10px 0;
+    color: #444444;
+}
+#account-section .row{
+    width: 60%;
+}
+.grid-account-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.grid-account-login,
+.grid-account-create{
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #575757;
+}
+.grid-account-container input[type="text"],
+.grid-account-container input[type="email"],
+.grid-account-container input[type="password"]{
+    width: 100%;
+    padding: 8px 15px;
+    margin: 5px 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.remember-me,
+.terms{
+    font-size: 16px;
+    margin: 10px 0;
+    float: left;
+}
+.forget-password{
+    float: right;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.forget-password a{
+    color: rgb(255, 4, 4);
+}
+.login-btn{
+    clear: both;
+}
+.login-btn a,
+.register-btn a{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px 15px;
+    background-color: #81AC27;
+    color: #fff;
+    margin: 10px 0;
+}
+.or{
+    text-align: center;
+    margin: 10px 0;
+    color: #575757;
+}
+.or h3::before,
+.or h3::after{
+    content: '---------------';
+}
+.social-account{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    align-items: center;
+}
+.social-account a{
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+    border-radius: 20px;
+}
+.fb-btn a{
+    background-color: #3b5998;
+}
+.google-btn a{
+    background-color: #DB4437;
+}
+.twitter-btn a{
+    background-color: #00acee;
+}
+.no-account h4{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+}

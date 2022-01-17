@@ -2,6 +2,10 @@
     .feature-container h2{
         margin-bottom: 80px;
     } 
+    /* Account Page */
+    #account-section .row{
+        width: 80%;
+    }
 }
 
 
@@ -68,6 +72,13 @@
     }
     .footer-top-container{
         text-align: center;
+    }
+    /* Account Page */
+    #account-section .row{
+        width: 96%;
+    }
+    .social-account a{
+        padding: 8px 15px;
     }
 }
 
@@ -137,6 +148,17 @@
         display: block;
     }
 
+    /* Account Page */
+    #account-section .row{
+        width: 80%;
+    }
+    .grid-account-container{
+        grid-template-columns: 1fr;
+    }
+    .social-account a{
+        padding: 8px 30px;
+    }
+
 
     @media screen and (max-width: 560px){
 
@@ -149,5 +171,13 @@
     }
     .grid-about-container{
         grid-template-columns: 1fr;
+    }
+
+     /* Account Page */
+    #account-section .row{
+        width: 94%;
+    }
+    .social-account a{
+        padding: 8px 15px;
     }
 }
