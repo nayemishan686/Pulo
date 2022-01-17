@@ -88,6 +88,12 @@ body{
      width: 80%;
      margin: auto;
  }
+ h2{
+     font-size: 32px;
+ }
+ h3{
+     font-size: 24px;
+ }
 
 /*==============================
         3. HEADER-SECTION
@@ -219,6 +225,9 @@ body{
  ==============================*/
 section.header-nav-section{
     background-color: #161932;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 .nav-bar ul li{
     display: inline-block;
@@ -236,10 +245,86 @@ section.header-nav-section{
     background-color: #81AC27;
 }
 
+
+
+/* Mobile Menu */
+
+
+.header-search-section{
+    position: relative;
+}
+.header-search-section .mobile-menu span{
+    position: absolute;
+    top: 30px;
+    right:10px;
+    font-size:30px;
+    color: #fff;
+    padding: 5px 5px 0px 5px;
+    background-color: #81AC27;
+    cursor: pointer;
+    display: none;
+}
+.overlay{
+    width: 0%;
+    height: 60%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    overflow-x:hidden;
+    transition: 0.5s;
+}
+.clsbtn{
+    font-size: 40px;
+    color: #ddd;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+.overlay-content{
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+}
+.overlay-content a{
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #ddd;
+}
+.overlay-content a:hover{
+    color: #81AC27;
+}
+.mobile-header-icon{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+}
+.mobile-header-icon a{
+    font-size: 24px;
+    color: #ddd;
+}
+.mobile-header-icon .far::after,
+.mobile-header-icon .fas::after{
+   content:attr(value);
+   font-size:14px;
+   color: #fff;
+   background: #81AC27;
+   padding: 5px 10px;
+   border-radius: 50%;
+   position: relative;
+   top: -10px;
+   left: -6px;
+}
+
  /*==============================
         HERO-SECTION
  ==============================*/
- #hero-section{min-height: 825px;
+ #hero-section{min-height: 435px;
      background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.6)), url(img/hero.jpg) no-repeat center / cover;
      color: #fff;
      position: relative;
@@ -287,7 +372,7 @@ section.header-nav-section{
  .grid-overlay-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 10px;
  }
  .grid-overlay-item{
      height: 250px;
@@ -324,7 +409,6 @@ section.header-nav-section{
     text-transform: capitalize;
 }
 .grid-about-item h2{
-    font-size: 40px;
     text-transform: capitalize;
     padding: 20px 0;
 }
@@ -385,11 +469,6 @@ section.header-nav-section{
     color: rgb(77, 77, 77);
     padding: 5px;
 }
-#trending-product-secction h2,
-#selling-product-secction h2{
-    font-size: 32px;
-
-}
 .trending-product-cotainer,
 .selling-product-cotainer{
     display: grid;
@@ -416,7 +495,6 @@ section.header-nav-section{
     border: 1px solid #81AC27;
 }
 .product-details h3{
-    font-size: 24px;
     color: #222225;
     font-weight: 500;
     margin: 10px 0;
@@ -439,6 +517,7 @@ section.header-nav-section{
     border-radius: 50%;
     margin: 10px 0;
     color: #000;
+    cursor: pointer;
 }
 .product-icon ul li a:hover i{ 
     background-color: #81AC27;
@@ -509,7 +588,6 @@ section.header-nav-section{
      text-transform: uppercase;
  }
  .product-banner-item h2{
-     font-size: 32px;
      text-transform: uppercase;
      padding: 20px 0;
  }
@@ -576,9 +654,6 @@ section.header-nav-section{
 .offer-details h3{
     font-size: 16px;
 }
-.offer-details h2{
-    font-size: 32px;
-}
 .offer-button a{
     color: #fff;
     font-size: 18px;
@@ -621,11 +696,11 @@ section.header-nav-section{
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     text-align: center;
-    grid-auto-rows: minmax(300px, auto);
+    grid-auto-rows: minmax(auto);
     clear: both;
+    justify-content: center;
 }
 .feature-container h2{
-    font-size: 32px;
     margin-bottom: 40px;
 }
 .featured-box{
@@ -637,7 +712,6 @@ section.header-nav-section{
     font-size: 12px;
 }
 .featured-left-description h3{
-    font-size: 24px;
     padding: 5px 0;
 }
 .featured-left-description span{
@@ -715,7 +789,6 @@ section.header-nav-section{
      padding-bottom: 30px;
  }
  .footer-top-container h3{
-     font-size: 24px;
      padding: 30px 0;
  }
 .footer-top-item h4{

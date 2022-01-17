@@ -61,7 +61,9 @@
             <div class="row">
                 <div class="header-search-container">
                     <div class="header-logo">
+                        <a href="">
                         <img src="resources/img/logo.png" alt="Logo">
+                        </a>
                     </div>
                     <div class="header-search-box">
                         <input type="text" name="search" placeholder="Search here">
@@ -78,6 +80,29 @@
                                 <i class="fas fa-shopping-cart" value="5"></i>
                             </a></li>
                         </ul>
+                    </div>
+                    <div class="mobile-menu">
+                        <span onclick="openNav()">&#9776;</span>
+                        <div class="overlay" id="my-nav">
+                            <a href="javascript:void()" onclick="closeNav()" class="clsbtn">&times;</a>
+                            <div class="mobile-header-icon">
+                                <a href="#" onclick="closeNav()">
+                                    <i class="far fa-heart" value="8"></i>
+                                </a>
+                                <a href="#" onclick="closeNav()">
+                                    <i class="fas fa-shopping-cart" value="5"></i>
+                                </a>
+                            </div>
+                            <div class="overlay-content">
+                                <a href="#" onclick="closeNav()">home</a>
+                                <a href="#" onclick="closeNav()">about us</a>
+                                <a href="#" onclick="closeNav()">service</a>
+                                <a href="#" onclick="closeNav()">pages</a>
+                                <a href="#" onclick="closeNav()">shop</a>
+                                <a href="#" onclick="closeNav()">blog</a>
+                                <a href="#" onclick="closeNav()">contact</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -916,66 +941,14 @@
 
         <!--END-FOOTER-SECTION -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
+
+        <!--END-MAIN-CONTENT-SECTION -->
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Script Source -->
         <script src="https://kit.fontawesome.com/f29cb9a807.js" crossorigin="anonymous"></script>
+        <script src="resources/js/jquery.js"></script>
 </body>
 </html>

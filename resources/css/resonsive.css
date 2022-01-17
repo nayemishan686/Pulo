@@ -1,191 +1,153 @@
-<!--START-TRENDING-PRODUCT-SECTION -->
-        <section id="selling-product-secction">
-            <div class="row">
-                <h4>recently added our store</h4>
-                <h2>Best Selling Products</h2>
-                <div class="selling-product-cotainer">
-                    
+@media screen and (max-width: 1200px) {
+    .feature-container h2{
+        margin-bottom: 80px;
+    } 
+}
 
-                    <div class="selling-product-item">
-                        <div class="product-box">
-                            <div class="prodect-img">
-                                <img src="resources/img/products/9.jpg" alt="">
-                                <div class="product-icon">
-                                <ul>
-                                    <li><i class="fas fa-eye"></i></li>
-                                    <li><i class="far fa-heart"></i></li>
-                                    <li><i class="fas fa-bed"></i></li>
-                                </ul>
-                                </div>
-                                <div class="sale-icon">
-                                <span>Sale</span>
-                                </div>
-                                <div class="cart-btn">
-                                <a href="#">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-details">
-                                <h3>Etiam-Gravida</h3>
-                                <h5>240tk <del>260tk</del> </h5>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="selling-product-item">
-                    <div class="product-box">
-                        <div class="prodect-img">
-                            <img src="resources/img/products/9.jpg" alt="">
-                            <div class="product-icon">
-                            <ul>
-                                <li><i class="fas fa-eye"></i></li>
-                                <li><i class="far fa-heart"></i></li>
-                                <li><i class="fas fa-bed"></i></li>
-                            </ul>
-                            </div>
-                            <div class="sale-icon">
-                            <span>Sale</span>
-                            </div>
-                            <div class="cart-btn">
-                            <a href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-details">
-                            <h3>Etiam-Gravida</h3>
-                            <h5>240tk <del>260tk</del> </h5>
-                        </div>
-                    </div>
-                    </div>
+@media screen and (max-width: 1080px){
+    .row{
+        width: 96%;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    #footer-section ul li a{
+        font-size: 14px;
+    }
+    .footer-top-item h4{
+        font-size: 16px;
+    }
+  
+}
 
-                    <div class="selling-product-item">
-                    <div class="product-box">
-                        <div class="prodect-img">
-                            <img src="resources/img/products/9.jpg" alt="">
-                            <div class="product-icon">
-                            <ul>
-                                <li><i class="fas fa-eye"></i></li>
-                                <li><i class="far fa-heart"></i></li>
-                                <li><i class="fas fa-bed"></i></li>
-                            </ul>
-                            </div>
-                            <div class="sale-icon">
-                            <span>Sale</span>
-                            </div>
-                            <div class="cart-btn">
-                            <a href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-details">
-                            <h3>Etiam-Gravida</h3>
-                            <h5>240tk <del>260tk</del> </h5>
-                        </div>
-                    </div>
-                    </div>
+@media screen and (max-width: 968px){
+    .header-top{
+        padding: 0px;
+        height: 60px;
+    }
+    .header-top-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header-top-left{
+        text-align: center;
+        padding-top: 8px;
+    }
+    .header-top-right{
+        text-align: center;
+        padding: 8px;
+    }
+    .nav-bar ul li a{
+        padding: 10px 12px;
+    }
+    .hero-content{
+        left: 10%;
+    }
+    #background-overlay-section .row{
+        width: 96%;
+    }
+    .grid-overlay-container{
+        grid-column-gap: 10px;
+    }
+    .trending-product-cotainer,
+    .selling-product-cotainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .offer-details{
+        left: 40%;
+        
+    }
+    .feature-container{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+    .footer-top-container{
+        text-align: center;
+    }
+}
 
-                    <div class="selling-product-item">
-                    <div class="product-box">
-                        <div class="prodect-img">
-                            <img src="resources/img/products/9.jpg" alt="">
-                            <div class="product-icon">
-                            <ul>
-                                <li><i class="fas fa-eye"></i></li>
-                                <li><i class="far fa-heart"></i></li>
-                                <li><i class="fas fa-bed"></i></li>
-                            </ul>
-                            </div>
-                            <div class="sale-icon">
-                            <span>Sale</span>
-                            </div>
-                            <div class="cart-btn">
-                            <a href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                        <div class="product-details">
-                            <h3>Etiam-Gravida</h3>
-                            <h5>240tk <del>260tk</del> </h5>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="selling-product-item">
-                <div class="product-box">
-                    <div class="prodect-img">
-                        <img src="resources/img/products/9.jpg" alt="">
-                        <div class="product-icon">
-                        <ul>
-                            <li><i class="fas fa-eye"></i></li>
-                            <li><i class="far fa-heart"></i></li>
-                            <li><i class="fas fa-bed"></i></li>
-                        </ul>
-                        </div>
-                        <div class="sale-icon">
-                        <span>Sale</span>
-                        </div>
-                        <div class="cart-btn">
-                        <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-details">
-                        <h3>Etiam-Gravida</h3>
-                        <h5>240tk <del>260tk</del> </h5>
-                    </div>
-                    </div>
-                 </div>
+@media screen and (max-width: 767px){
+    .hero-content h1{
+        font-size: 24px;
+    }
+    .nav-bar{
+        display: none;
+    }
+    .header-top{
+        height: 90px;
+    }
+    .header-search-section .row{
+        width: 100%;
+    }
+    .header-logo img{
+        width: %;
+    }
+    .header-search-container{
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr;
+    }
+    .header-icon{
+        display: none;
+    }
+    
+    .grid-overlay-container{
+        padding: 30px 0;
+        grid-template-columns: 1fr;
+    }
+    .grid-overlay-item{
+        margin-top: 20px;
+    }
+    #trending-product-secction .row,
+    #selling-product-secction.row{
+        width: 80%;
+    }
+    .trending-product-cotainer,
+    .selling-product-cotainer{
+        grid-template-columns: 1fr 1fr;
+    }
+    .offer-product-container,
+    .feature-container{
+        grid-template-columns: 1fr;
+    }
+    .featured-nav ul li a{
+        font-size: 16px;
+    }
+    .footer-top-container{
+        grid-template-columns: 1fr 1fr;
 
-                <div class="selling-product-item">
-                <div class="product-box">
-                    <div class="prodect-img">
-                        <img src="resources/img/products/9.jpg" alt="">
-                        <div class="product-icon">
-                        <ul>
-                            <li><i class="fas fa-eye"></i></li>
-                            <li><i class="far fa-heart"></i></li>
-                            <li><i class="fas fa-bed"></i></li>
-                        </ul>
-                        </div>
-                        <div class="sale-icon">
-                        <span>Sale</span>
-                        </div>
-                        <div class="cart-btn">
-                        <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-details">
-                        <h3>Etiam-Gravida</h3>
-                        <h5>240tk <del>260tk</del> </h5>
-                    </div>
-                </div>
-            </div>
+    }
+    .copyright{
+        float: none;
+        text-align: center;
+    }
+    .footer-bottom-nav{
+        float: none;
+        text-align: center;
+    }
 
-                <div class="selling-product-item">
-                <div class="product-box">
-                    <div class="prodect-img">
-                        <img src="resources/img/products/9.jpg" alt="">
-                        <div class="product-icon">
-                        <ul>
-                            <li><i class="fas fa-eye"></i></li>
-                            <li><i class="far fa-heart"></i></li>
-                            <li><i class="fas fa-bed"></i></li>
-                        </ul>
-                        </div>
-                        <div class="sale-icon">
-                        <span>Sale</span>
-                        </div>
-                        <div class="cart-btn">
-                        <a href="#">Add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="product-details">
-                        <h3>Etiam-Gravida</h3>
-                        <h5>240tk <del>260tk</del> </h5>
-                    </div>
-                    </div>
-                 </div>
+    /* Mobile Menu */
 
-                </div>
-                <div class="product-view-more">
-                    <a href="">View More</a>
-                </div>
-            </div>
-        </section>
-        <!--END-SELLING-PRODUCT-SECTION -->
+    .header-search-section .mobile-menu span{
+        display: block;
+    }
 
+
+    @media screen and (max-width: 560px){
+
+    .trending-product-cotainer,
+    .selling-product-cotainer{
+        grid-template-columns: 1fr;
+    }
+    #about-product-section .row{
+        width: 80%;
+    }
+    .grid-about-container{
+        grid-template-columns: 1fr;
+    }
+}
