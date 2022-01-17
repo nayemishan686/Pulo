@@ -85,7 +85,7 @@ body{
      list-style: none;
  }
  .row{
-     width: 60%;
+     width: 80%;
      margin: auto;
  }
 
@@ -150,7 +150,7 @@ body{
     display: inline-block;
     height: 15px;
     width: 32px;
-    background: url(../../resources/img/4.jpg) no-repeat center / cover;
+    background: url(../../resources/img/us.png) no-repeat center / cover;
 }
 
  /*==============================
@@ -313,6 +313,7 @@ section.header-nav-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 80px;
+    align-items: center;
 }
 .grid-about-item img{
     width: 100%;
@@ -341,17 +342,20 @@ section.header-nav-section{
     padding-right: 5px;
 }
 .about-testimonial{
-    display: grid;
-    grid-template-columns: 1fr 7fr;
+    display: ;
 }
 .about-testimonial-img{
     height: 50px;
     width: 50px;
+    float: left;
 }
 .about-testimonial-img img{
     border-radius: 50%;
     padding: 5px;
     outline: 2px solid #81AC27;
+}
+.about-testimonial-description{
+    margin-left: 100px;
 }
 .about-testimonial-description h3{
     font-size: 16px;
