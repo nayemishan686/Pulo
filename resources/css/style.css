@@ -378,11 +378,6 @@ section.header-nav-section{
     text-align: center;
     padding: 60px 0;
 }
-#trending-product-secction .row,
-#selling-product-secction .row+{
-    width: 80%;
-    margin: auto;
-}
 #trending-product-secction h4,
 #selling-product-secction h4{
     font-size: 12px;
@@ -399,19 +394,21 @@ section.header-nav-section{
 .selling-product-cotainer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    padding: 40px;
+    grid-gap: 20px;
+    padding: 40px 0px;
 }
 .product-box{
     height: 400px;
     width: 100%;
     background-color: #ddd;
-    position: relative;
     border: 1px solid #ddd;
 }
-
-.prodect-img img{
+.prodect-img{
     height: 300px;
+    position: relative;
+}
+.prodect-img img{
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -436,14 +433,14 @@ section.header-nav-section{
     top: 10px;
     display: none;
 }
-.product-icon ul li i{
+.product-icon ul li a i{
     padding: 10px;
     background-color: #ddd;
     border-radius: 50%;
     margin: 10px 0;
-    cursor: pointer;
+    color: #000;
 }
-.product-icon ul li i:hover{
+.product-icon ul li a:hover i{ 
     background-color: #81AC27;
     color: #fff;
 }
@@ -453,8 +450,8 @@ section.header-nav-section{
     left: 10px;
 }
 .sale-icon span{
-    font-size: 15px;
-    padding: 15px;
+    font-size: 13px;
+    padding: 12px 10px;
     background-color: #81AC27;
     border-radius: 50%;
     color: #fff;
@@ -472,9 +469,10 @@ section.header-nav-section{
     font-size: 18px;
     font-weight: 600;
     position: absolute;
-    top: 250px;
-    left: 25%;
     display: none;
+    bottom: 20px;
+    left: 0;
+    right: 0;
 }
 .cart-btn a{
     color: #000;
@@ -528,21 +526,26 @@ section.header-nav-section{
 /*======================================
         SELLING-PRODUCT-SECTION
  =======================================*/
- #selling-product-secction .sale-icon span{
+.selling-product-item .sale-icon span{
      background-color: #161932;
  }
- #selling-product-secction .product-icon{
-    position: absolute;
-    top: 240px;
+.selling-product-item .product-icon{
+    right: 0;
+    left: 0;
+    top: 80%;
  }
- #selling-product-secction .product-icon ul li{
+ .selling-product-item .product-icon ul li{
      display: inline-block;
-     float: right;
-     margin: 0px 20px;
-
+     padding: 0 5px;
  }
 #selling-product-secction .cart-btn{
-    top: 140px;
+    position: absolute;
+    top: 50%;
+}
+#selling-product-secction .cart-btn a{
+    background-color: #81AC27;
+    border: 0;
+    color: #FFFFFF;
 }
 /*======================================
         SELLING-PRODUCT-SECTION
