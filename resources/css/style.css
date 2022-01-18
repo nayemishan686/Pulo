@@ -281,6 +281,7 @@ section.header-nav-section{
     position: absolute;
     right: 30px;
     top: 30px;
+    padding: 10px;
 }
 .overlay-content{
     position: relative;
@@ -328,6 +329,7 @@ section.header-nav-section{
      background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.6)), url(img/hero.jpg) no-repeat center / cover;
      color: #fff;
      position: relative;
+     min-height: 80vh;
  }
  .hero-content{
      position: absolute;
