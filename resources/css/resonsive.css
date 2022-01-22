@@ -80,6 +80,10 @@
     .social-account a{
         padding: 8px 15px;
     }
+    /* Cart Page */
+    .cart-total-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 
@@ -141,6 +145,17 @@
         float: none;
         text-align: center;
     }
+    .coupon-cart-contain{
+        display: block;
+    }
+    .coupon input{
+        padding: 5px;
+        width: 150px;
+        height: 30px;
+    }
+    .cart-up{
+        margin-top: 20px;
+    }
 
     /* Mobile Menu */
 
@@ -179,5 +194,11 @@
     }
     .social-account a{
         padding: 8px 15px;
+    }
+
+
+    /* Cart Page */
+    .cart-total-container{
+        grid-template-columns: 1fr;
     }
 }

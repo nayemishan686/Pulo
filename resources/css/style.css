@@ -943,3 +943,123 @@ section.header-nav-section{
     text-align: center;
     padding: 10px 0;
 }
+
+ /*======================================
+                CART PAGE
+ =======================================*/
+
+     /*======================================
+                TABLE-FORM SECTION
+     =======================================*/
+#table .row{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0px;
+}
+.table-form{
+    overflow-x: auto;
+}
+.table-form table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    min-width: 700px;
+    white-space: nowrap;
+}
+.table-form table img{
+    width:90px;
+    height: 80px;
+}
+.table-form thead{
+    background-color: #ddd;
+}
+.table-form table tr th{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 6px;
+}
+.table-form table tr td{
+    text-align: center;
+}
+.table-form h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.table-form span{
+    font-size: 14px;
+
+}
+.table-form input{
+    width: 25%;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.table-form input:focus,
+.coupon input:focus{
+    outline: none;
+}
+.table-form table tr td i{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.coupon-cart-contain{
+    display: flex;
+    justify-content: space-between;
+}
+.coupon input{
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 16px;
+}
+.coupon a,
+.cart-up a{
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: #81AC27;
+    color: #fff;
+}
+
+    /*======================================
+                CART-TOTAL-SECTION
+     =======================================*/
+#cart-total{
+   padding: 60px 0; 
+}
+.cart-total-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.cart-total-item:last-child{
+    padding: 10px 20px;
+    border: 1px solid #777676;
+}
+.cart-total-item h3{
+    text-align: center;
+    color: #292929;
+    font-weight: 600;
+}
+.cart-total-item div{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-total-item hr{
+    margin: 10px 0;
+}
+.cart-total-item h6,
+.cart-total-item p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 5px 0;
+}
+.cart-total-item a{
+    font-size: 18px;
+    padding: 8px 15px;
+    background-color: #81AC27;
+    color: #fff;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
