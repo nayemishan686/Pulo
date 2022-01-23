@@ -98,7 +98,15 @@ body{
 /*==============================
         3. HEADER-SECTION
  ==============================*/
-
+ .header-section{
+     z-index: 10;
+ }
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+}
  /*==============================
         HEADER-TOP-SECTION
  ==============================*/
@@ -162,9 +170,10 @@ body{
  /*==============================
         HEADER-SEARCH-SECTION
  ==============================*/
- .header-search.section{
+ .header-search-section{
      color: #FFFFFF;
      height: auto;
+     background-color: #fff;
  }
  .header-search-container{
      display: grid;
