@@ -179,7 +179,7 @@ body{
  .header-search-box input{
     border: 1px solid #ddd;
     outline: none;
-    color: #ddd;
+    color: #575757;
     position: absolute;
     top: 0;
     left: 0;
@@ -519,11 +519,11 @@ section.header-nav-section{
     border-radius: 50%;
     margin: 10px 0;
     color: #000;
-    cursor: pointer;
 }
-.product-icon ul li a:hover i{ 
+.product-icon ul li:hover a i{ 
     background-color: #81AC27;
     color: #fff;
+    cursor: pointer;
 }
 .sale-icon{
     position: absolute;

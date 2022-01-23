@@ -137,6 +137,9 @@
         grid-template-columns: 1fr 1fr;
 
     }
+    .footer-top-item address{
+        font-size: 14px;
+    }
     .copyright{
         float: none;
         text-align: center;
