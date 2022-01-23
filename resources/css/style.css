@@ -487,6 +487,7 @@ section.header-nav-section{
 .prodect-img{
     height: 300px;
     position: relative;
+    border: 1px solid #81AC27;
 }
 .prodect-img img{
     height: 100%;
@@ -494,7 +495,6 @@ section.header-nav-section{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 1px solid #81AC27;
 }
 .product-details h3{
     color: #222225;
