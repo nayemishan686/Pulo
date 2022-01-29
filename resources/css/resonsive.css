@@ -6,6 +6,10 @@
     #account-section .row{
         width: 80%;
     }
+    #contact-box .row{
+        width: 70%;
+        margin:auto;
+    }
 }
 
 
@@ -84,6 +88,10 @@
     .cart-total-container{
         grid-template-columns: 1fr 1fr;
     }
+    #contact-box .row{
+        width: 80%;
+        margin:auto;
+    }
 }
 
 
@@ -100,9 +108,9 @@
     .header-search-section .row{
         width: 100%;
     }
-    .header-logo img{
+    /* .header-logo img{
         width: %;
-    }
+    } */
     .header-search-container{
         display: grid;
         grid-template-columns: 2fr 4fr 1fr;
@@ -176,7 +184,11 @@
     .social-account a{
         padding: 8px 30px;
     }
-
+    #contact-box .row{
+        width: 90%;
+        margin:auto;
+    }
+}
 
     @media screen and (max-width: 560px){
 
@@ -203,5 +215,17 @@
     /* Cart Page */
     .cart-total-container{
         grid-template-columns: 1fr;
+    }
+    #contact-box .row{
+        width: 80%;
+        margin:auto;
+    }
+    .contact-box-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+    }
+    .contact-box-item.right-side{
+        padding: 40px;
     }
 }

@@ -1099,3 +1099,102 @@ section.header-nav-section{
     margin: 10px 0;
     text-align: center;
 }
+
+ /*======================================
+                CONTACT PAGE
+ =======================================*/
+
+     /*======================================
+                MAP SECTION
+      =======================================*/
+#map{
+    height:500px;
+    width:100%;
+    background: url(../img/map.png) no-repeat center / cover;
+}
+
+    /*======================================
+                CONTACT SECTION
+      =======================================*/
+#contact-box{
+    background-color: transparent;
+    margin-top: -180px;
+    z-index: 10;
+    margin-bottom: 80px;
+}
+#contact-box .row{
+    width: 50%;
+    margin:auto;
+}
+.contact-box-container{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+}
+.contact-box-item.left-side{
+    background-color: #ffffff;
+    padding: 40px;
+}
+.contact-box-item.right-side{
+    background-color: #81AC27;
+    padding: 40px 20px;
+}
+.contact-box-item.right-side{
+    color: #ffffff;
+    font-size: 16px;
+}
+.contact-box-item h3{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.input-box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px ;
+}
+.input-box-container-item input,
+.input-box-container-item textarea{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #7e7e7e;
+    font-size: 16px;
+    padding: 20px 0px
+}
+.input-box-container-item input:focus,
+.input-box-container-item textarea:focus{
+    outline: none;
+}
+.input-box-container:last-child{
+    display: grid;
+    grid-template-columns:11fr 1fr;
+    align-items: end;
+    padding-top: 20px;
+}
+.input-box-container:last-child i{
+    font-size: 20px;
+    background-color: #81AC27;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+.right-side p{
+    padding: 10px 0;
+}
+.right-side i{
+    padding-right: 10px;
+    font-size: 18px;
+}
+.right-side .social-icon ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 20px;
+}
+.right-side .social-icon ul li i{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+ 
