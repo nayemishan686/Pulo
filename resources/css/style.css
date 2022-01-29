@@ -101,12 +101,6 @@ body{
  .header-section{
      z-index: 10;
  }
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: 0.5s;
-}
  /*==============================
         HEADER-TOP-SECTION
  ==============================*/
@@ -253,7 +247,13 @@ section.header-nav-section{
 .nav-bar ul li a:hover{
     background-color: #81AC27;
 }
-
+.navbar.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 10;
+}
 
 
 /* Mobile Menu */
