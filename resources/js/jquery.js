@@ -31,3 +31,23 @@ scrollToTop.addEventListener("click", function(){
     });
 });
 
+
+//Login form validation
+$('#lForm').validate({
+    rules: {
+        lemail:{
+            required: true,
+        },
+        lpassword:{
+            required: true,
+        }
+    },
+    messages: {
+        lemail: {
+            required: "useremail cannot be blank",
+        },
+        lpassword:{
+            required: "Password cannot be blank",
+        }
+    }
+});

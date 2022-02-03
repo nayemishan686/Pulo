@@ -156,12 +156,12 @@
                     <h2>Login</h2>
                     <p>Login if you are a returning customer</p>
                     <div class="login-form">
-                        <form action="" method="post">
+                        <form name="lForm" id="lForm" action="" method="post">
                             <div class="email-form">
-                                <input type="email" placeholder="E-mail Address" required>
+                                <input type="email" placeholder="E-mail Address" name="lemail" id="lemail">
                             </div>
                             <div class="password-form">
-                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Password" name="lpassword" id="lpassword">
                             </div>
                             <div class="remember-me">
                                 <input type="checkbox" name="a" id="a">
@@ -171,7 +171,7 @@
                                 <a href="">Forgot Password?</a>
                             </div>
                             <div class="login-btn">
-                                <a href="">Login</a>
+                                <input type="submit" value="Login">
                             </div>
                         </form>
                     </div>
@@ -200,10 +200,10 @@
                     <div class="new-account-form">
                         <form action="" method="post">
                             <div class="username">
-                                <input type="text" placeholder="Username" required>
+                                <input type="text" placeholder="Username" >
                             </div>
                             <div class="email-form">
-                                <input type="email" placeholder="E-mail Address" required>
+                                <input type="email" placeholder="E-mail Address">
                             </div>
                             <div class="password-form">
                                 <input type="password" placeholder="Password">
@@ -212,7 +212,7 @@
                                 <input type="password" placeholder="Confirm Password">
                             </div>
                             <div class="register-btn">
-                                <a href="">Submit & Register</a>
+                                <input type="submit" value="Submit & Register">
                             </div>
                         </form>
                     </div>
@@ -348,6 +348,8 @@
 
 <!-- Script Source -->
     <script src="https://kit.fontawesome.com/f29cb9a807.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script src="resources/js/jquery.js"></script>
 
 

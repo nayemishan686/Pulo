@@ -933,8 +933,8 @@ section.header-nav-section{
 .login-btn{
     clear: both;
 }
-.login-btn a,
-.register-btn a{
+.login-btn input,
+.register-btn input{
     display: block;
     text-align: center;
     font-size: 20px;
@@ -942,6 +942,13 @@ section.header-nav-section{
     background-color: #81AC27;
     color: #fff;
     margin: 10px 0;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.error{
+    color: #e62739;
+    font-size: 14px;
 }
 .or{
     text-align: center;
