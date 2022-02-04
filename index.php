@@ -44,7 +44,7 @@
                             </li>
                             <li class="account-link">
                                 <span>
-                                    <a href="account.html">
+                                    <a href="account.php">
                                         <i class="fas fa-user-circle"></i> Login / registration
                                     </a>
                                 </span>
@@ -76,7 +76,7 @@
                             <li><a href="#">
                                 <i class="far fa-heart" value="8"></i>
                             </a></li>
-                            <li><a href="cart.html">
+                            <li><a href="cart.php">
                                 <i class="fas fa-shopping-cart" value="5"></i>
                             </a></li>
                         </ul>
@@ -94,13 +94,13 @@
                                 </a>
                             </div>
                             <div class="overlay-content">
-                                <a href="index.html" onclick="closeNav()">home</a>
+                                <a href="index.php" onclick="closeNav()">home</a>
                                 <a href="#" onclick="closeNav()">about us</a>
                                 <a href="#" onclick="closeNav()">service</a>
                                 <a href="#" onclick="closeNav()">pages</a>
                                 <a href="#" onclick="closeNav()">shop</a>
                                 <a href="#" onclick="closeNav()">blog</a>
-                                <a href="contact.html" onclick="closeNav()">contact</a>
+                                <a href="contact.php" onclick="closeNav()">contact</a>
                             </div>
                         </div>
                     </div>
@@ -114,13 +114,13 @@
             <div class="row">
                 <div class="nav-bar">
                     <ul>
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="index.php">home</a></li>
                         <li><a href="#">about us</a></li>
                         <li><a href="#">service</a></li>
                         <li><a href="#">pages</a></li>
                         <li><a href="#">shop</a></li>
                         <li><a href="#">blog</a></li>
-                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="contact.php">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -950,7 +950,9 @@
 
 
     <!-- Script Source -->
-        <script src="https://kit.fontawesome.com/f29cb9a807.js" crossorigin="anonymous"></script>
-        <script src="resources/js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/f29cb9a807.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="resources/js/jquery.js"></script>
 </body>
 </html>
