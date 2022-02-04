@@ -1133,6 +1133,11 @@ section.header-nav-section{
     width: 50%;
     margin:auto;
 }
+.contact-box-container button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .contact-box-container{
     display: grid;
     grid-template-columns: 3fr 2fr;

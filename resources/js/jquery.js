@@ -94,3 +94,56 @@ $('#cFrom').validate({
 
 
 });
+
+
+//contact form
+$('#conForm').validate({
+    rules: {
+        conname:{
+            required: true,
+            minlength: 4,
+            maxlength: 20
+        },
+        coneamil:{
+            required: true
+        },
+        concompany:{
+            required: true,
+            minlength: 2,
+        },
+        conurl:{
+            required: true,
+        },
+        conmessage:{
+            required: true,
+            minlength: 10
+        }
+        
+
+    },
+    messages: {
+        conname: {
+            required: "Name cannot be blank",
+            minlength : "Name must be at least 4 characters",
+            maxlength : "Name must be under 20 characters"
+        },
+        coneamil:{
+            required: "Email cannot be blank"
+        },
+        concompany:{
+            required: "Company name cannot be blank",
+            minlength: "Please use at least 2 character"
+        },
+        conurl:{
+            required: "You must give web address",
+        },
+        conmessage:{
+            required: "Message cannot be blank",
+            minlength: "Message must be at least 10 characters"
+        }
+    }
+
+
+
+
+});
