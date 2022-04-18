@@ -2785,6 +2785,10 @@ a[data-lightbox="roadtrip"] .img-fluid,
 a[data-toggle="lightbox"] .img-fluid {
   margin: 10px 0; }
 
+.img-fluid{
+  width: 60%;
+}
+
 /**====== Timeline css end ======**/
 /**  =====================
       Wall css start
