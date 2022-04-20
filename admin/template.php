@@ -1,5 +1,15 @@
+<?php include('class/adminBack.php'); ?>
+<?php 
+    session_start();
+    $adminId = $_SESSION['adminId'];
+    $adminUserName = $_SESSION['adminUser'];
+    $adminEmail = $_SESSION['adminEmail'];
+    if($adminId == null){
+        header('Location: index.php');
+    }
+?>
 <!-- Include Header Part  -->
-<?php include('includes/header.php'); ?>
+<?php include('includes/header.php');?>
 
   <body>
 	  <div class="fixed-button">
