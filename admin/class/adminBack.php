@@ -41,4 +41,12 @@ class Admin{
             echo "Please enter email and password";
         }
     }
+
+    function adminLogout() {
+        unset($_SESSION['adminId']);
+        unset($_SESSION['adminUser']);
+        unset($_SESSION['adminEmail']);
+        unset($_SESSION['adminPass']);
+        header("location: index.php");
+    }
 }

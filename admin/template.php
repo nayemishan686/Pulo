@@ -7,6 +7,11 @@
     if($adminId == null){
         header('Location: index.php');
     }
+
+    if(isset($_GET['adminLogout'])){
+        $obj_adminBack = new Admin();
+        $obj_adminBack->adminLogout();
+    }
 ?>
 <!-- Include Header Part  -->
 <?php include('includes/header.php');?>
