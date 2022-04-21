@@ -1,4 +1,21 @@
+<?php
+    $obj_adminBack = new Admin();
+    if(isset($_POST['addCtgBtn'])){
+        $return_msg = $obj_adminBack->addCategory($_POST);
+    }
+
+?>
+
 <form action="" method="post">
+    <?php 
+        if(isset($return_msg)){
+    ?>
+        <div class="alert alert-dark">
+            <?php echo $return_msg; ?>
+        </div>
+    <?php
+        }
+    ?>
     <h2>Add Category</h2>
     <div class="form-group">
         <label for="ctgName" class="h6">Category Name :</label>
@@ -19,5 +36,7 @@
         </select>
     </div>
 
-    <input type="submit" value="Add Category" class="btn btn-primary">
+    <input type="submit" value="Add Category" name="addCtgBtn" class="btn btn-primary">
+
+    
 </form>

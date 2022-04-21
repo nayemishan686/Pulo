@@ -49,4 +49,20 @@ class Admin{
         unset($_SESSION['adminPass']);
         header("location: index.php");
     }
+
+    function addCategory($data){
+        $ctgName = $data['ctgName'];
+        $ctgDes = $data['ctgDes'];
+        $ctgStatus = $data['ctgStatus'];
+
+        $query = "INSERT INTO `Category_table`(`cat_name`, `cat_des`, `cat_status`) VALUES ('$ctgName','$ctgDes','$ctgStatus')";
+
+        if(mysqli_query($this->conn,$query)){
+            $msg = "Product category added successfully";
+            return $msg;
+        }else{
+            $msg = "Product category can't added";
+            return $msg;
+        }
+    }
 }
