@@ -39,7 +39,7 @@
 
                                 <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                        <span class="pcoded-micon"><i class="ti-package"></i></span>
                                         <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -64,7 +64,7 @@
 
                                 <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">User</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
