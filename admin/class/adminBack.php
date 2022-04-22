@@ -83,4 +83,12 @@ class Admin{
         $query = "UPDATE `Category_table` SET `cat_status`=0 WHERE `cat_id` = '$id'";
         mysqli_query($this->conn,$query);
     }
+
+    function deleteCategory($id){
+        $query = "DELETE FROM Category_table WHERE `Category_table`.`cat_id` = '$id'";
+        if(mysqli_query($this->conn,$query)){
+            $msg = 'Category deleted successfully';
+            return $msg;
+        }
+    }
 }

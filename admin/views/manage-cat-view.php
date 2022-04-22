@@ -4,13 +4,25 @@
 
     if(isset($_GET['status'])){
         $get_id = $_GET['id'];
-        if($_GET['status'] =="publish"){
+        if($_GET['status'] =='delete'){
+           $deleteMsg = $obj_adminBack->deleteCategory($get_id);
+        }elseif($_GET['status'] =='publish'){
             $obj_adminBack->publishCategory($get_id);
-        }elseif($_GET['status'] = 'unpublish'){
+        }elseif($_GET['status'] =='unpublish'){
             $obj_adminBack->unpublishCategory($get_id);
         }
     }
 ?>
+<!-- Msg print -->
+<?php 
+        if(isset($deleteMsg)){
+    ?>
+        <div class="alert alert-dark">
+            <?php echo $deleteMsg; ?>
+        </div>
+    <?php
+        }
+    ?>
 <h2>Manage Category</h2>
 <table class="table table-striped">
     <thead>
@@ -45,8 +57,8 @@
                     ?>
                 </td>
                 <td>
-                    <a href="" class="btn btn-success">Update</a>
-                    <a href="" class="btn btn-danger">Delete</a>
+                    <a href="" class="btn btn-success">Edit</a>
+                    <a href="?status=delete&&id=<?php echo $ctg['cat_id']; ?>"class="btn btn-danger">Delete</a>
                 </td>
             </tr>
 
