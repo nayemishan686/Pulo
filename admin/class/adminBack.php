@@ -73,4 +73,14 @@ class Admin{
             return $returnCtg;
         }
     }
+
+    function publishCategory($id){
+        $query = "UPDATE `Category_table` SET `cat_status`=1 WHERE `cat_id` = '$id'";
+        mysqli_query($this->conn,$query);
+    }
+
+    function unpublishCategory($id){
+        $query = "UPDATE `Category_table` SET `cat_status`=0 WHERE `cat_id` = '$id'";
+        mysqli_query($this->conn,$query);
+    }
 }
