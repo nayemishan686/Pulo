@@ -65,4 +65,12 @@ class Admin{
             return $msg;
         }
     }
+
+    function displayCategory(){
+        $query = "SELECT * FROM `Category_table`";
+        if(mysqli_query($this->conn,$query)){
+            $returnCtg = mysqli_query($this->conn,$query);
+            return $returnCtg;
+        }
+    }
 }
