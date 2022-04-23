@@ -66,7 +66,7 @@
                 ?>
             </td>
             <td>
-                    <a href="" class="btn btn-success">Edit</a>
+                    <a href="edit-product.php?prostatus=edit&&id=<?php echo $product['pdt_id'];?>" class="btn btn-success">Edit</a>
                     <a href="?prostatus=delete&&id=<?php echo $product['pdt_id'];?>"class="btn btn-danger">Delete</a>
                 </td>
         </tr>

@@ -170,4 +170,51 @@ class Admin{
         $query = "UPDATE `product_table` SET `pdt_status`=0 WHERE `pdt_id` = '$id'";
         mysqli_query($this->conn,$query);
     }
+
+    function getEditToUpdateProduct($id) { 
+        $query = "SELECT * FROM `product_cat_info` WHERE `pdt_id` = '$id'";
+        if(mysqli_query($this->conn,$query)){
+            $cat_info = mysqli_query($this->conn,$query);
+            $ct_info = mysqli_fetch_assoc($cat_info);
+            return $ct_info;
+        }
+        if(mysqli_query($this->conn,$query)){
+            $product_info = mysqli_query($this->conn,$query);
+            $product = mysqli_fetch_assoc($product_info);
+            return $product;
+        }
+        
+    }
+
+    function updateProduct($data){
+        $pdtId = $data['uPdtId'];
+        $pdtName = $data['updtName'];
+        $pdtPrice = $data['updtPrice'];
+        $pdtDes = $data['updtDes'];
+        $pdtCategory = $data['updtCategory'];
+        $pdtImgName = $_FILES['updtImage']['name'];
+        $pdtTmpName = $_FILES['updtImage']['tmp_name'];
+        $pdtImgSize = $_FILES['updtImage']['size'];
+        $pdt_ext = pathinfo($pdtImgName, PATHINFO_EXTENSION);
+
+        if($pdt_ext == 'jpg' or $pdt_ext == 'png' or $pdt_ext == 'jpeg'){
+            if($pdtImgSize <= 2097152){
+                $query ="UPDATE `product_table` SET `pdt_name`='$pdtName',`pdt_price`='$pdtPrice',`pdt_des`='$pdtDes',`pdt_img`='$pdtImgName' WHERE pdt_id = '$pdtId'";
+
+                $uploads_dir = 'uploads/';
+                if(mysqli_query($this->conn,$query)){
+                    move_uploaded_file($pdtTmpName, $uploads_dir.$pdtImgName);
+                    $msg = "Product Updated Successfully";
+                    return $msg;
+                }
+
+            }else{
+                $msg = "File size must be under 2 MB";
+                return $msg;
+            }
+        }else{
+            $msg = "Your File must be a jpg or png or jpeg";
+            return $msg;
+        }        
+    }
 }
