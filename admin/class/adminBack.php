@@ -112,4 +112,36 @@ class Admin{
             return $msg;
         }
     }
+
+    function addProduct($data){
+        $pdtName = $data['pdtName'];
+        $pdtPrice = $data['pdtPrice'];
+        $pdtDes = $data['pdtDes'];
+        $pdtCategory = $data['pdtCategory'];
+        $pdtImgName = $_FILES['pdtImage']['name'];
+        $pdtTmpName = $_FILES['pdtImage']['tmp_name'];
+        $pdtImgSize = $_FILES['pdtImage']['size'];
+        $pdt_ext = pathinfo($pdtImgName, PATHINFO_EXTENSION);
+        $pdtStatus = $data['pdtStatus'];
+
+        if($pdt_ext == 'jpg' or $pdt_ext == 'png' or $pdt_ext == 'jpeg'){
+            if($pdtImgSize <= 2097152){
+                $query ="INSERT INTO `product_table`(`pdt_name`, `pdt_price`, `pdt_des`, `pdt_ctg`, `pdt_img`, `pdt_status`) VALUES ('$pdtName','$pdtPrice','$pdtDes','$pdtCategory','$pdtImgName','$pdtStatus')";
+
+                $uploads_dir = 'uploads/';
+                if(mysqli_query($this->conn,$query)){
+                    move_uploaded_file($pdtTmpName, $uploads_dir.$pdtImgName);
+                    $msg = "Your Product Upload Successfully";
+                    return $msg;
+                }
+
+            }else{
+                $msg = "File size must be under 2 MB";
+                return $msg;
+            }
+        }else{
+            $msg = "Your File must be a jpg or png or jpeg";
+            return $msg;
+        }
+    }
 }
