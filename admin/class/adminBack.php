@@ -126,7 +126,7 @@ class Admin{
 
         if($pdt_ext == 'jpg' or $pdt_ext == 'png' or $pdt_ext == 'jpeg'){
             if($pdtImgSize <= 2097152){
-                $query ="INSERT INTO `product_table`(`pdt_name`, `pdt_price`, `pdt_des`, `pdt_ctg`, `pdt_img`, `pdt_status`) VALUES ('$pdtName','$pdtPrice','$pdtDes','$pdtCategory','$pdtImgName','$pdtStatus')";
+                $query ="INSERT INTO `product_table`(`pdt_name`, `pdt_price`, `pdt_des`, `pdt_ctg_id`, `pdt_img`, `pdt_status`) VALUES ('$pdtName','$pdtPrice','$pdtDes','$pdtCategory','$pdtImgName','$pdtStatus')";
 
                 $uploads_dir = 'uploads/';
                 if(mysqli_query($this->conn,$query)){
@@ -142,6 +142,14 @@ class Admin{
         }else{
             $msg = "Your File must be a jpg or png or jpeg";
             return $msg;
+        }
+    }
+    
+    function displayProduct(){
+        $query = "SELECT * FROM product_cat_info";
+        if(mysqli_query($this->conn,$query)){
+            $product = mysqli_query($this->conn,$query);
+            return $product;
         }
     }
 }
