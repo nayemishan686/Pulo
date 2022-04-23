@@ -91,4 +91,25 @@ class Admin{
             return $msg;
         }
     }
+
+    function getEditToUpdateCategory($id){
+        $query = "SELECT `cat_id`, `cat_name`, `cat_des`, `cat_status` FROM `Category_table` WHERE `cat_id` = '$id'";
+        if(mysqli_query($this->conn,$query)){
+            $cat_info = mysqli_query($this->conn,$query);
+            $ct_info = mysqli_fetch_assoc($cat_info);
+            return $ct_info;
+        }
+    }
+
+    function updateCategory($receivedId){
+        $ctg_id = $receivedId['uCtgId'];
+        $ctg_name = $receivedId['uCtgName'];
+        $ctg_des = $receivedId['uCtgDes'];
+
+        $query = "UPDATE `Category_table` SET `cat_name`='$ctg_name',`cat_des`='$ctg_des' WHERE `cat_id` = '$ctg_id'";
+        if(mysqli_query($this->conn,$query)){
+            $msg = "category updated successfully";
+            return $msg;
+        }
+    }
 }

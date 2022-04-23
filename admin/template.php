@@ -63,6 +63,8 @@
                                                     include('views/add-user-view.php');
                                                 }elseif('manage-user' == $views){
                                                     include('views/manage-user-view.php');
+                                                }elseif('edit-cat' == $views){
+                                                    include('views/edit-cat-view.php');
                                                 }
                                             }
                                         
