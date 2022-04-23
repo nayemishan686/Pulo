@@ -6,6 +6,10 @@
         $pro_id = $_GET['id'];
         if($_GET['prostatus'] == 'delete'){
            $returnMsg = $obj_adminBack->deleteProduct($pro_id);
+        }elseif($_GET['prostatus'] == 'publish'){
+            $obj_adminBack->publishProduct($pro_id);
+        }elseif($_GET['prostatus'] == 'unpublish'){
+            $obj_adminBack->unpublishProduct($pro_id);
         }
     }
 ?>
@@ -51,12 +55,12 @@
                     if($product['pdt_status'] == 1) {
                         echo "Published";
                 ?>
-                    <a href="" class="btn btn-danger">Unpublished</a>
+                    <a href="?prostatus=unpublish&&id=<?php echo $product['pdt_id'];?>"" class="btn btn-danger">Unpublished</a>
                 <?php
                     }else{
                         echo "Unpublished";
                 ?>
-                    <a href="" class="btn btn-success">Published</a>
+                    <a href="?prostatus=publish&&id=<?php echo $product['pdt_id'];?>"" class="btn btn-success">Published</a>
                 <?php
                     }
                 ?>

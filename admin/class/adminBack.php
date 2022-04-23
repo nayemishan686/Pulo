@@ -160,4 +160,14 @@ class Admin{
             return $pdtmsg;
         }
     }
+
+    function publishProduct($id){
+        $query = "UPDATE `product_table` SET `pdt_status`=1 WHERE `pdt_id` = '$id'";
+        mysqli_query($this->conn,$query);
+    }
+
+    function unpublishProduct($id){
+        $query = "UPDATE `product_table` SET `pdt_status`=0 WHERE `pdt_id` = '$id'";
+        mysqli_query($this->conn,$query);
+    }
 }
