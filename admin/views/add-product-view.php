@@ -6,14 +6,6 @@
     }
 ?>
 
-<?php 
-    if(isset($_FILES['pdtImage'])){
-        echo "<pre>";
-        print_r($_FILES);
-        echo "</pre>";
-    }
-?>
-
 <form class="form" action="" method="post" enctype="multipart/form-data">
     <?php 
         if(isset($return_msg)){

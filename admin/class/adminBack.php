@@ -152,4 +152,12 @@ class Admin{
             return $product;
         }
     }
+
+    function deleteProduct($id){
+        $query = "DELETE FROM `product_table` WHERE pdt_id = '$id'";
+        if(mysqli_query($this->conn,$query)){
+            $pdtmsg = 'product deleted successfully';
+            return $pdtmsg;
+        }
+    }
 }
